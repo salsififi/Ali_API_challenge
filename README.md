@@ -1,7 +1,48 @@
 # Ali's API challenge
 An exercise proposed by Ali to get to know each other
 
-## Instructions
+## Prerequesites
+- Python 3.12 or earlier installed on your computer
+- [Git](https://git-scm.com/) installed on your computer
+- an IDE like [PyCharm](https://www.jetbrains.com/pycharm/) or [VSCode](https://code.visualstudio.com/)
+- Postgresql installed on your computer
+
+## Clone the repository
+Clone this repository with this terminal command `git clone https://github.com/salsififi/Ali_API_challenge`.
+
+## Install project dependencies
+
+### The easiest way: using uv
+- If you don't have uv installed, install it with on of these methods: 
+https://docs.astral.sh/uv/getting-started/installation/
+- Go at the root of the project at its root (`cd API_challenge folder`).
+- Run this command: `uv sync`. A virtual environnement will be created in a .venv folder, 
+and all dependancies will be installed very quickly.
+
+### If you don't want to use uv...
+- At the root of the project, create a virtual environnement folder named .venv with terminal command 
+`python -m venv .venv`.
+- Install project dependancies with `pip install -r requirements.txt`.
+- Create a .env file (still at the root of the project): `touch .env`.
+
+## Create the .env file
+- Edit this file with `DB_PASSWORD=<your-postgres-user-password>`
+(replace the string after == by your postgres user password, which usually is postgres by default).
+
+## Models chosen
+
+- For users: CustomUser (general), Candidate, Recruiter
+- For job offers: JobOffer
+![Classes diagram](docs/images/classes_diag.png)
+
+## API endpoints
+![Endpoints](docs/images/endpoints.png)
+
+## Sequence diagram
+Use case: a user wants to see the published job offers.
+![Sequence_diag](docs/images/Job_offers_consultation_sequence_diag.png)
+
+## Context (Ali's instructions)
 
 **Projet Backend dev**
 
@@ -20,11 +61,3 @@ Les livrables du projet sont la réalisation d'une application Django/Python qui
 - Conception du module avec des diagrammes UML sur DrawIO
 - Suivi de la réalisation, du début jusqu'à la fin, sur un repo Github public.
 
-## Models chosen
-
-- For users: CustomUser (general), Candidate, Recruiter
-- For job offers: JobOffer
-![Classes diagram](docs/images/classes_diag.png)
-
-## API endpoints
-![Endpoints](docs/images/endpoints.png)
