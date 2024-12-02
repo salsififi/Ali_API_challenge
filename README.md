@@ -38,6 +38,10 @@ and all dependancies will be installed very quickly.
 ## API endpoints
 ![Endpoints](docs/images/endpoints.png)
 
+## API documentation
+- First launch project with `python manage.py runserver`.
+- Then, in your browser, go to http://127.0.0.1:8000/swagger/.
+
 ## Sequence diagram
 Use case: a user wants to see the published job offers.
 ![Sequence_diag](docs/images/Job_offers_consultation_sequence_diag.png)
