@@ -1,5 +1,5 @@
-# Ali's API challenge
-An exercise proposed by Ali to get to know each other
+# API challenge
+An exercise proposed by our CTO Ali to get to know each other.
 
 ## Prerequesites
 - Python 3.12 or earlier installed on your computer
@@ -23,9 +23,9 @@ and all dependancies will be installed very quickly.
 - At the root of the project, create a virtual environnement folder named .venv with terminal command 
 `python -m venv .venv`.
 - Install project dependancies with `pip install -r requirements.txt`.
-- Create a .env file (still at the root of the project): `touch .env`.
 
 ## Create the .env file
+- Create a .env file (still at the root of the project): `touch .env`.
 - Edit this file with `DB_PASSWORD=<your-postgres-user-password>`
 (replace the string after == by your postgres user password, which usually is postgres by default).
 
